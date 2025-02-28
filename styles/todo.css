@@ -1,3 +1,23 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInTop {
+	from {
+		transform: translateY(-50px)
+	}
+	
+	to {
+		transform: translateY(0);
+	}
+}
+
 * {
 	font-family: Arial;
 	font-weight: bold;
@@ -18,12 +38,25 @@
 .Header {
 	font-weight: 20px;
 	display: inline-block;
+	animation-name: fadeIn;
+	animation-duration: 4s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
 }
 
 .input-box {
 	border: 1px solid grey;
 	padding: 15px 10px;
 	width: 500px;
+}
+
+.function-cont {
+	animation-name: slideInTop;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
 }
 
 .submit {
@@ -66,4 +99,42 @@
 .finish-btn:hover {
 	background: green;
 	color: white;
+}
+
+@media (max-width: 1000px) {
+	
+	.Input {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+	}
+	
+	.Header {
+		text-align: center;
+		width: 100%;
+	}
+	
+	.input-box {
+		width: 80%;
+	}
+	
+	.function-cont {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	
+	.todo-text {
+		width: 95%;
+	}
+	
+	.output {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
