@@ -11,6 +11,14 @@
 			<h1 class="Header">Todo List</h1>
 			<div class="function-cont">
 				<input type="text" class="input-box" placeholder="Type a task..." >
+				<div class="js-error"></div>
+				<div>
+					<input type="time" class="task-date" value="01:00">
+					<select class="time-select">
+						<option value="am">am</option>
+						<option value="pm">pm</option>
+					</select>
+				</div>
 				<button class="submit" onclick="
 					addTodo();
 				">Create</button>
