@@ -74,6 +74,10 @@
 	border: 1px solid black;
 }
 
+.output {
+	margin-top: 50px;
+}
+
 .submit:active {
 	color: white;
 	background: black;
@@ -90,6 +94,11 @@
 	width: 500px;
 }
 
+.task-name {
+	width: 250px;
+	word-wrap: break-word;
+}
+
 .finish-btn {
 	margin-left: auto;
 	height: 30px;
@@ -99,6 +108,32 @@
 .finish-btn:hover {
 	background: green;
 	color: white;
+}
+
+.date {
+	color: grey;
+	font-size: 13px;
+	padding: 5px;
+	margin-left: auto;
+}
+
+.function-cont div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.task-date {
+	padding: 15px 10px;
+}
+
+
+.time-select {
+	padding: 17px 10px;
+}
+
+.js-error {
+	color: red;
+	font-weight: normal;
 }
 
 @media (max-width: 1000px) {
@@ -136,5 +171,13 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	
+	.date {
+		display: inline-block;
+	}
+	
+	.time-select {
+		display: inline-block;
 	}
 }
